@@ -1,10 +1,13 @@
 'use client';
 
-import { useState, useCallback } from 'react';
-import { QUESTIONS } from '@/data/questions';
+import { useState, useCallback, useEffect, useRef } from 'react';
+import { QUESTIONS, CATEGORIES } from '@/data/questions';
 import { Card } from '@/components/card';
+import { CompactCard } from '@/components/compact-card';
+import { DetailSheet } from '@/components/detail-sheet';
 import { submitVote } from '@/lib/supabase';
-import { ArrowLeft, RotateCcw } from 'lucide-react';
+import { ArrowLeft, RotateCcw, Home } from 'lucide-react';
+import type { QuestionOption } from '@/data/questions';
 
 interface SurveyProps {
   voter: string;
@@ -16,155 +19,201 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
   const [currentQ, setCurrentQ] = useState(0);
   const [votes, setVotes] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
+  const [expandedOption, setExpandedOption] = useState<QuestionOption | null>(null);
+  const justSelectedRef = useRef(false);
 
   const q = QUESTIONS[currentQ];
   const selectedId = votes[q.id] || '';
 
-  const selectOption = useCallback((optionId: string) => {
-    setVotes((prev) => ({ ...prev, [q.id]: optionId }));
-  }, [q.id]);
+  // 当前分类信息
+  const currentCategory = CATEGORIES.find(c => c.id === q.category)!;
+  const categoryQuestions = QUESTIONS.filter(qq => qq.category === q.category);
+  const categoryIndex = categoryQuestions.indexOf(q);
 
-  const goNext = useCallback(async () => {
-    if (!selectedId) {
-      alert('请先选择这一题的一个选项。');
+  // 选择选项
+  const selectOption = useCallback((optionId: string) => {
+    const isNewSelection = votes[q.id] !== optionId;
+    setVotes((prev) => ({ ...prev, [q.id]: optionId }));
+    if (isNewSelection) {
+      justSelectedRef.current = true;
+    }
+  }, [q.id, votes]);
+
+  // 自动跳题（选中后 600ms）
+  useEffect(() => {
+    if (!justSelectedRef.current) return;
+    justSelectedRef.current = false;
+
+    if (currentQ >= QUESTIONS.length - 1) return;
+
+    const timer = setTimeout(() => {
+      setCurrentQ(i => i + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 600);
+    return () => clearTimeout(timer);
+  }, [votes, currentQ]);
+
+  // 提交投票
+  const handleSubmit = useCallback(async () => {
+    const unfilled = QUESTIONS.filter(qq => !votes[qq.id]);
+    if (unfilled.length > 0) {
+      alert(`还有 ${unfilled.length} 题未完成。`);
+      // 跳到第一个未答题
+      const idx = QUESTIONS.indexOf(unfilled[0]);
+      setCurrentQ(idx);
       return;
     }
-    if (currentQ === QUESTIONS.length - 1) {
-      // 检查是否全部完成
-      const unfilled = QUESTIONS.filter((qq) => !votes[qq.id] && qq.id !== q.id);
-      if (unfilled.length > 0) {
-        alert(`还有 ${unfilled.length} 题未完成。`);
-        return;
-      }
-      // 提交
-      setSubmitting(true);
-      try {
-        await submitVote(voter, { ...votes, [q.id]: selectedId });
-        onComplete();
-      } catch (err) {
-        console.error(err);
-        alert('提交失败，请重试。');
-      } finally {
-        setSubmitting(false);
-      }
-    } else {
-      setCurrentQ((i) => i + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    setSubmitting(true);
+    try {
+      await submitVote(voter, votes);
+      onComplete();
+    } catch (err) {
+      console.error(err);
+      alert('提交失败，请重试。');
+    } finally {
+      setSubmitting(false);
     }
-  }, [selectedId, currentQ, votes, q.id, voter, onComplete]);
+  }, [votes, voter, onComplete]);
 
   const goPrev = useCallback(() => {
     if (currentQ > 0) {
-      setCurrentQ((i) => i - 1);
+      setCurrentQ(i => i - 1);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [currentQ]);
 
+  const goNext = useCallback(() => {
+    if (!selectedId) {
+      alert('请先选择一个选项。');
+      return;
+    }
+    if (currentQ === QUESTIONS.length - 1) {
+      handleSubmit();
+    } else {
+      setCurrentQ(i => i + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [selectedId, currentQ, handleSubmit]);
+
   const resetAll = useCallback(() => {
-    if (confirm('确定清空本人的全部选择？')) {
+    if (confirm('确定清空全部选择？')) {
       setVotes({});
       setCurrentQ(0);
     }
   }, []);
 
-  const progress = ((currentQ + 1) / QUESTIONS.length) * 100;
-  const pickedQuestions = QUESTIONS.filter((qq) => votes[qq.id]);
-
   return (
-    <section className="max-w-[1100px] mx-auto px-6 pb-16">
-      <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-6 items-start">
-        {/* 侧边栏 */}
-        <aside className="md:sticky md:top-5 bg-white border-[1.5px] border-line rounded-[20px] p-5 shadow-lg flex flex-col gap-4 mt-6">
-          <div className="text-[13px] text-muted">
-            当前投票成员
-            <strong className="block text-[17px] text-text mt-0.5">{voter}</strong>
-          </div>
-
-          {/* 进度条 */}
-          <div className="flex flex-col gap-1.5">
-            <div className="flex justify-between text-xs text-muted">
-              <span>进度</span>
-              <span>{currentQ + 1} / {QUESTIONS.length}</span>
-            </div>
-            <div className="h-1.5 bg-[#f0e4db] rounded-full overflow-hidden">
-              <span
-                className="block h-full bg-gradient-to-r from-brand to-brand2 transition-all duration-400 rounded-full"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-          </div>
-
-          {/* 已选列表 */}
-          <div className="flex flex-col gap-1.5 max-h-[280px] overflow-y-auto">
-            {pickedQuestions.length === 0 ? (
-              <div className="text-xs text-muted py-1">尚未选择任何题目</div>
-            ) : (
-              pickedQuestions.map((qq) => {
-                const opt = qq.options.find((o) => o.id === votes[qq.id]);
-                return (
-                  <div key={qq.id} className="p-2 bg-bg rounded-[9px] border border-line text-xs leading-snug">
-                    <div className="text-brand font-bold text-[11px]">{qq.day} · {qq.meal}</div>
-                    <div className="font-semibold text-text mt-0.5">{opt?.name}</div>
-                  </div>
-                );
-              })
-            )}
-          </div>
-
-          {/* 操作按钮 */}
-          <div className="flex flex-col gap-2">
-            <button onClick={resetAll} className="w-full py-2.5 rounded-xl text-sm font-semibold bg-white border-[1.5px] border-[#f0c0b0] text-[#b84030] hover:bg-[#fff5f3] transition-colors flex items-center justify-center gap-1.5">
-              <RotateCcw className="w-3.5 h-3.5" /> 清空重选
+    <section className="min-h-screen">
+      {/* Slim Top Bar */}
+      <nav className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-line shadow-sm">
+        <div className="max-w-[700px] mx-auto px-4 py-3">
+          {/* 第一行：导航 + 投票者 + 进度 + 操作 */}
+          <div className="flex items-center justify-between gap-2">
+            <button
+              onClick={goPrev}
+              disabled={currentQ === 0}
+              className="w-8 h-8 rounded-full bg-bg flex items-center justify-center text-muted hover:text-text hover:bg-line transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            >
+              <ArrowLeft className="w-4 h-4" />
             </button>
-            <button onClick={onBack} className="w-full py-2.5 rounded-xl text-sm font-semibold bg-white border-[1.5px] border-line text-muted hover:border-[#c8b0a0] hover:text-text transition-colors flex items-center justify-center gap-1.5">
-              <ArrowLeft className="w-3.5 h-3.5" /> 返回首页
-            </button>
-          </div>
-        </aside>
 
-        {/* 题目区域 */}
-        <div className="bg-white border-[1.5px] border-line rounded-[20px] p-6 shadow-lg mt-6">
-          <div className="text-xs font-bold tracking-wider uppercase text-brand mb-1.5">
-            {q.day} · {q.meal} · 第 {currentQ + 1} 题 / 共 {QUESTIONS.length} 题
-          </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-text mb-5 leading-tight">{q.title}</h2>
+            <div className="flex-1 text-center min-w-0">
+              <span className="text-sm font-semibold text-text">{voter}</span>
+              <span className="text-xs text-muted ml-2">{currentQ + 1}/{QUESTIONS.length}</span>
+            </div>
 
-          {/* 选项卡片 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {q.options.map((opt) => (
-              <Card
-                key={opt.id}
-                option={opt}
-                selected={selectedId === opt.id}
-                onSelect={() => selectOption(opt.id)}
+            <div className="flex gap-1.5">
+              <button
+                onClick={resetAll}
+                className="w-8 h-8 rounded-full bg-bg flex items-center justify-center text-muted hover:text-[#b84030] hover:bg-[#fff5f3] transition-colors"
+                title="清空重选"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+              </button>
+              <button
+                onClick={onBack}
+                className="w-8 h-8 rounded-full bg-bg flex items-center justify-center text-muted hover:text-text hover:bg-line transition-colors"
+                title="返回首页"
+              >
+                <Home className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+
+          {/* 第二行：分段进度条 */}
+          <div className="flex gap-1 mt-2.5">
+            {QUESTIONS.map((qq, i) => (
+              <div
+                key={qq.id}
+                className={`h-1 flex-1 rounded-full transition-all duration-300 ${
+                  votes[qq.id]
+                    ? 'bg-gradient-to-r from-brand to-brand2'
+                    : i === currentQ
+                      ? 'bg-brand/30'
+                      : 'bg-[#f0e4db]'
+                }`}
               />
             ))}
           </div>
+        </div>
+      </nav>
 
-          {/* 导航 */}
-          <div className="flex justify-between items-center mt-5 gap-3">
-            <span className="text-[13px] text-muted">
-              {selectedId ? '' : '请选择一个选项后继续'}
-            </span>
-            <div className="flex gap-2.5">
-              <button
-                onClick={goPrev}
-                disabled={currentQ === 0}
-                className="px-5 py-3 rounded-xl text-sm font-semibold bg-white border-[1.5px] border-line text-muted hover:border-[#c8b0a0] hover:text-text transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                ← 上一题
-              </button>
-              <button
-                onClick={goNext}
-                disabled={submitting}
-                className="px-5 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-br from-brand to-brand2 shadow-[0_6px_18px_rgba(201,74,30,.28)] hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(201,74,30,.36)] active:translate-y-0 transition-all disabled:opacity-60"
-              >
-                {submitting ? '提交中...' : currentQ === QUESTIONS.length - 1 ? '提交投票' : '下一题 →'}
-              </button>
-            </div>
-          </div>
+      {/* 题目内容 */}
+      <div className="max-w-[700px] mx-auto px-4 pb-20 pt-5">
+        {/* 分类标签 */}
+        <div className="text-xs font-bold text-brand mb-1.5">
+          {currentCategory.emoji} {currentCategory.label} · 第 {categoryIndex + 1} 题
+        </div>
+
+        <h2 className="text-xl md:text-2xl font-bold text-text mb-5 leading-tight">{q.title}</h2>
+
+        {/* 移动端：紧凑并排卡片 */}
+        <div className="grid grid-cols-2 gap-3 md:hidden">
+          {q.options.map(opt => (
+            <CompactCard
+              key={opt.id}
+              option={opt}
+              selected={selectedId === opt.id}
+              onSelect={() => selectOption(opt.id)}
+              onExpand={() => setExpandedOption(opt)}
+            />
+          ))}
+        </div>
+
+        {/* 桌面端：完整卡片 */}
+        <div className="hidden md:grid md:grid-cols-2 gap-4">
+          {q.options.map(opt => (
+            <Card
+              key={opt.id}
+              option={opt}
+              selected={selectedId === opt.id}
+              onSelect={() => selectOption(opt.id)}
+            />
+          ))}
+        </div>
+
+        {/* 底部导航按钮 */}
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={goNext}
+            disabled={submitting || !selectedId}
+            className={`px-8 py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed
+              ${currentQ === QUESTIONS.length - 1
+                ? 'text-white bg-gradient-to-br from-brand to-brand2 shadow-[0_6px_18px_rgba(201,74,30,.28)] hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(201,74,30,.36)] active:translate-y-0'
+                : 'text-white bg-gradient-to-br from-brand to-brand2 shadow-[0_6px_18px_rgba(201,74,30,.28)] hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(201,74,30,.36)] active:translate-y-0'
+              }`}
+          >
+            {submitting ? '提交中...' : currentQ === QUESTIONS.length - 1 ? '提交投票 ✓' : '下一题 →'}
+          </button>
         </div>
       </div>
+
+      {/* 详情底部弹窗 */}
+      <DetailSheet
+        option={expandedOption}
+        open={!!expandedOption}
+        onClose={() => setExpandedOption(null)}
+      />
     </section>
   );
 }

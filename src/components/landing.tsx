@@ -37,7 +37,7 @@ export function Landing({ onStart, onViewResults }: LandingProps) {
           济州美食行程<br />投票问卷
         </h1>
         <p className="text-base text-muted max-w-[520px] mt-2">
-          6 人同行 · 共 11 道题 · 每题二选一 · 自动生成最终行程
+          6 人同行 · 共 7 道题 · 每题二选一 · 自动生成最终行程
         </p>
       </div>
 
@@ -72,7 +72,7 @@ export function Landing({ onStart, onViewResults }: LandingProps) {
                 { label: '日期', value: '4月4日 — 4月7日' },
                 { label: '人数', value: '6 人同行' },
                 { label: '基地', value: '济州市区' },
-                { label: '题目', value: '11 道 · 二选一' },
+                { label: '题目', value: '7 道 · 二选一' },
               ].map((item) => (
                 <div key={item.label} className="p-3 bg-bg rounded-xl border border-line">
                   <div className="text-[11px] font-bold tracking-wider uppercase text-brand mb-0.5">
