@@ -33,7 +33,7 @@ export async function submitVote(voter: string, answers: Record<string, string>)
     .from('jeju_votes')
     .select('id')
     .eq('voter', voter)
-    .single();
+    .maybeSingle();
 
   if (existing) {
     // 更新
