@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { IMAGES } from '@/data/images';
 import type { QuestionOption } from '@/data/questions';
 import { MapPin, ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -91,13 +91,17 @@ export function DetailSheet({ option, open, onClose }: DetailSheetProps) {
   );
 }
 
-// 图片轮播子组件
+// 图片轮播子组件（支持触摸滑动）
 function ImageCarousel({ images, slideIndex, setSlideIndex, name }: {
   images: string[];
   slideIndex: number;
   setSlideIndex: (i: number) => void;
   name: string;
 }) {
+  const touchStartX = useRef(0);
+  const touchDeltaX = useRef(0);
+  const isSwiping = useRef(false);
+
   const prev = useCallback((e: React.MouseEvent) => {
     e.stopPropagation();
     setSlideIndex((slideIndex - 1 + images.length) % images.length);
@@ -108,8 +112,36 @@ function ImageCarousel({ images, slideIndex, setSlideIndex, name }: {
     setSlideIndex((slideIndex + 1) % images.length);
   }, [slideIndex, images.length, setSlideIndex]);
 
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+    isSwiping.current = false;
+  }, []);
+
+  const onTouchMove = useCallback((e: React.TouchEvent) => {
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+    if (Math.abs(touchDeltaX.current) > 10) {
+      isSwiping.current = true;
+    }
+  }, []);
+
+  const onTouchEnd = useCallback(() => {
+    if (!isSwiping.current) return;
+    const threshold = 50;
+    if (touchDeltaX.current < -threshold && slideIndex < images.length - 1) {
+      setSlideIndex(slideIndex + 1);
+    } else if (touchDeltaX.current > threshold && slideIndex > 0) {
+      setSlideIndex(slideIndex - 1);
+    }
+  }, [slideIndex, images.length, setSlideIndex]);
+
   return (
-    <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#ede3db] group">
+    <div
+      className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#ede3db] group"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       <div
         className="flex w-full h-full transition-transform duration-300 ease-out"
         style={{ transform: `translateX(-${slideIndex * 100}%)` }}
@@ -117,16 +149,16 @@ function ImageCarousel({ images, slideIndex, setSlideIndex, name }: {
         {images.map((src, i) => (
           <div key={i} className="flex-shrink-0 w-full h-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt={`${name} ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
+            <img src={src} alt={`${name} ${i + 1}`} className="w-full h-full object-cover" draggable={false} loading="lazy" />
           </div>
         ))}
       </div>
       {images.length > 1 && (
         <>
-          <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-text opacity-0 group-hover:opacity-100 transition-opacity">
+          <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-text md:opacity-0 md:group-hover:opacity-100 transition-opacity">
             <ChevronLeft className="w-3.5 h-3.5" />
           </button>
-          <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-text opacity-0 group-hover:opacity-100 transition-opacity">
+          <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-text md:opacity-0 md:group-hover:opacity-100 transition-opacity">
             <ChevronRight className="w-3.5 h-3.5" />
           </button>
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
