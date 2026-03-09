@@ -6,6 +6,7 @@ import { Card } from '@/components/card';
 import { CompactCard } from '@/components/compact-card';
 import { DetailSheet } from '@/components/detail-sheet';
 import { submitVote } from '@/lib/supabase';
+import { Modal } from '@/components/modal';
 import { ArrowLeft, RotateCcw, Home, Heart, X } from 'lucide-react';
 import type { QuestionOption, SelectionState } from '@/data/questions';
 
@@ -20,6 +21,7 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
   const [votes, setVotes] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [expandedOption, setExpandedOption] = useState<QuestionOption | null>(null);
+  const [modal, setModal] = useState<{ title: string; message?: string; onConfirm: () => void; onCancel?: () => void } | null>(null);
   const justSelectedRef = useRef(false);
 
   const q = QUESTIONS[currentQ];
@@ -56,7 +58,7 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
 
     const timer = setTimeout(() => {
       setCurrentQ(i => i + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo(0, 0);
     }, 600);
     return () => clearTimeout(timer);
   }, [votes, currentQ]);
@@ -65,9 +67,12 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
   const handleSubmit = useCallback(async () => {
     const unfilled = QUESTIONS.filter(qq => !votes[qq.id]);
     if (unfilled.length > 0) {
-      alert(`还有 ${unfilled.length} 题未完成。`);
       const idx = QUESTIONS.indexOf(unfilled[0]);
-      setCurrentQ(idx);
+      setModal({
+        title: `还有 ${unfilled.length} 题未完成`,
+        message: '将跳转到第一道未答题目',
+        onConfirm: () => { setModal(null); setCurrentQ(idx); },
+      });
       return;
     }
     setSubmitting(true);
@@ -76,7 +81,7 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
       onComplete();
     } catch (err) {
       console.error(err);
-      alert('提交失败，请重试。');
+      setModal({ title: '提交失败', message: '请重试。', onConfirm: () => setModal(null) });
     } finally {
       setSubmitting(false);
     }
@@ -85,28 +90,29 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
   const goPrev = useCallback(() => {
     if (currentQ > 0) {
       setCurrentQ(i => i - 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo(0, 0);
     }
   }, [currentQ]);
 
   const goNext = useCallback(() => {
     if (!selectedId) {
-      alert('请先选择一个选项。');
+      setModal({ title: '请先选择一个选项', onConfirm: () => setModal(null) });
       return;
     }
     if (currentQ === QUESTIONS.length - 1) {
       handleSubmit();
     } else {
       setCurrentQ(i => i + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo(0, 0);
     }
   }, [selectedId, currentQ, handleSubmit]);
 
   const resetAll = useCallback(() => {
-    if (confirm('确定清空全部选择？')) {
-      setVotes({});
-      setCurrentQ(0);
-    }
+    setModal({
+      title: '确定清空全部选择？',
+      onConfirm: () => { setModal(null); setVotes({}); setCurrentQ(0); },
+      onCancel: () => setModal(null),
+    });
   }, []);
 
   return (
@@ -240,6 +246,17 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
         open={!!expandedOption}
         onClose={() => setExpandedOption(null)}
       />
+
+      {/* 自定义弹窗（替代 alert/confirm） */}
+      {modal && (
+        <Modal
+          open
+          title={modal.title}
+          message={modal.message}
+          onConfirm={modal.onConfirm}
+          onCancel={modal.onCancel}
+        />
+      )}
     </section>
   );
 }

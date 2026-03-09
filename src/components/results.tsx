@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { QUESTIONS, CATEGORIES } from '@/data/questions';
 import { IMAGES } from '@/data/images';
 import { getVotes, clearAllVotes, type VoteRecord } from '@/lib/supabase';
+import { Modal } from '@/components/modal';
 import { ArrowLeft, Download, Trash2, RefreshCw, MapPin } from 'lucide-react';
 
 interface ResultsProps {
@@ -33,6 +34,7 @@ interface RestaurantRank {
 export function Results({ onBack, onVoteAgain }: ResultsProps) {
   const [votes, setVotes] = useState<VoteRecord[]>([]);
   const [loading, setLoading] = useState(true);
+  const [modal, setModal] = useState<{ title: string; message?: string; onConfirm: () => void; onCancel?: () => void } | null>(null);
 
   const loadVotes = useCallback(async () => {
     setLoading(true);
@@ -103,15 +105,22 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
     return { mostContested, mostDecisive };
   }, [tally, votes.length]);
 
-  const handleClearAll = useCallback(async () => {
-    if (!confirm('确定清空全部投票记录？此操作不可撤销。')) return;
-    try {
-      await clearAllVotes();
-      await loadVotes();
-    } catch (err) {
-      console.error(err);
-      alert('清空失败，请重试。');
-    }
+  const handleClearAll = useCallback(() => {
+    setModal({
+      title: '确定清空全部投票记录？',
+      message: '此操作不可撤销。',
+      onConfirm: async () => {
+        setModal(null);
+        try {
+          await clearAllVotes();
+          await loadVotes();
+        } catch (err) {
+          console.error(err);
+          setModal({ title: '清空失败', message: '请重试。', onConfirm: () => setModal(null) });
+        }
+      },
+      onCancel: () => setModal(null),
+    });
   }, [loadVotes]);
 
   const handleDownloadText = useCallback(() => {
@@ -246,6 +255,17 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
           继续投票
         </button>
       </div>
+
+      {/* 自定义弹窗 */}
+      {modal && (
+        <Modal
+          open
+          title={modal.title}
+          message={modal.message}
+          onConfirm={modal.onConfirm}
+          onCancel={modal.onCancel}
+        />
+      )}
     </section>
   );
 }
