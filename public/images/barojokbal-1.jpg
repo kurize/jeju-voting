@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<meta name='robots' content='noindex, follow' />
+<script id="wpp-js" src="https://hungrygopher.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js" data-sampling="0" data-sampling-rate="100" data-api-url="https://hungrygopher.com/wp-json/wordpress-popular-posts" data-post-id="3940" data-token="e1968916f8" data-lang="0" data-debug="0" type="text/javascript"></script>
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - Heal Your Skin with Sun | Hungry Gopher Inc.</title>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Page not found - Heal Your Skin with Sun | Hungry Gopher Inc." />
+	<meta property="og:site_name" content="Heal Your Skin with Sun | Hungry Gopher Inc." />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://hungrygopher.com/#website","url":"https://hungrygopher.com/","name":"Heal Your Skin with Sun | Hungry Gopher Inc.","description":"Natural Gut &amp; Skin Healing for Busy Women with Chronic Flares","publisher":{"@id":"https://hungrygopher.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hungrygopher.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://hungrygopher.com/#organization","name":"Heal Your Skin with Sun | Hungry Gopher Inc.","url":"https://hungrygopher.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hungrygopher.com/#/schema/logo/image/","url":"https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design.png","contentUrl":"https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design.png","width":1024,"height":1024,"caption":"Heal Your Skin with Sun | Hungry Gopher Inc."},"image":{"@id":"https://hungrygopher.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//hungry-gopher.kit.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Heal Your Skin with Sun | Hungry Gopher Inc. &raquo; Feed" href="https://hungrygopher.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Heal Your Skin with Sun | Hungry Gopher Inc. &raquo; Comments Feed" href="https://hungrygopher.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v10.0.3 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-C5PNMHEJSK"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '10.0.3';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/hungrygopher.com\/wp-content\/uploads\/2017\/07\/9-Pork-Hock-Recipe-%A8C-Succulent-Korean-Pork-feet.jpg\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-C5PNMHEJSK',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-C5PNMHEJSK', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hungrygopher.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.7"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.archive #nav-above,
+					.archive #nav-below,
+					.search #nav-above,
+					.search #nav-below,
+					.blog #nav-below, 
+					.blog #nav-above, 
+					.navigation.paging-navigation, 
+					.navigation.pagination,
+					.pagination.paging-pagination, 
+					.pagination.pagination, 
+					.pagination.loop-pagination, 
+					.bicubic-nav-link, 
+					#page-nav, 
+					.camp-paging, 
+					#reposter_nav-pages, 
+					.unity-post-pagination, 
+					.wordpost_content .nav_post_link { 
+						display: none !important; 
+					}
+					.single-gallery .pagination.gllrpr_pagination {
+						display: block !important; 
+					}</style>
+		
+	<link rel='stylesheet' id='wp-block-library-css' href='https://hungrygopher.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.7' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='ib-block-countdown-css' href='https://hungrygopher.com/wp-content/plugins/wp-countdown-block/style.css?ver=1700697350' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-broadcasts-css' href='https://hungrygopher.com/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=2.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-button-css' href='https://hungrygopher.com/wp-content/plugins/convertkit/resources/frontend/css/button.css?ver=2.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-form-css' href='https://hungrygopher.com/wp-content/plugins/convertkit/resources/frontend/css/form.css?ver=2.8.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpcdt-public-css-css' href='https://hungrygopher.com/wp-content/plugins/countdown-timer-ultimate/assets/css/wpcdt-public.css?ver=2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://hungrygopher.com/wp-includes/css/dashicons.min.css?ver=6.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='everest-forms-general-css' href='https://hungrygopher.com/wp-content/plugins/everest-forms/assets/css/everest-forms.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-intl-tel-input-css' href='https://hungrygopher.com/wp-content/plugins/everest-forms/assets/css/intlTelInput.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpa-css-css' href='https://hungrygopher.com/wp-content/plugins/honeypot/includes/css/wpa.css?ver=2.2.01' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-banner-style-css' href='https://hungrygopher.com/wp-content/plugins/simple-banner/simple-banner.css?ver=2.17.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://hungrygopher.com/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=7.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://hungrygopher.com/wp-content/themes/flash/css/font-awesome.min.css?ver=6.3.7' type='text/css' media='' />
+<link rel='stylesheet' id='flash-style-css' href='https://hungrygopher.com/wp-content/themes/flash/style.css?ver=6.3.7' type='text/css' media='all' />
+<style id='flash-style-inline-css' type='text/css'>
+	/* Predefined Color Schemes CSS */
+
+	/* Background Color */
+	body {
+		background-color: #ffffff;
+	}
+
+	/* Link Color */
+	#site-navigation ul li:hover > a, #site-navigation ul li.current-menu-item > a, #site-navigation ul li.current_page_item > a, #site-navigation ul li.current_page_ancestor > a, #site-navigation ul li.current-menu-ancestor > a, #site-navigation ul.sub-menu li:hover > a,#site-navigation ul li ul.sub-menu li.menu-item-has-children ul li:hover > a,#site-navigation ul li ul.sub-menu li.menu-item-has-children:hover > .menu-item,body.transparent #masthead .header-bottom #site-navigation ul li:hover > .menu-item,body.transparent #masthead .header-bottom #site-navigation ul li:hover > a,body.transparent #masthead .header-bottom #site-navigation ul.sub-menu li:hover > a,body.transparent #masthead .header-bottom #site-navigation ul.sub-menu li.menu-item-has-children ul li:hover > a,body.transparent.header-sticky #masthead-sticky-wrapper #masthead .header-bottom #site-navigation ul.sub-menu li > a:hover,.tg-service-widget .service-title-wrap a:hover,.tg-service-widget .service-more,.feature-product-section .button-group button:hover ,.fun-facts-section .fun-facts-icon-wrap,.fun-facts-section .tg-fun-facts-widget.tg-fun-facts-layout-2 .counter-wrapper,.blog-section .tg-blog-widget-layout-2 .blog-content .read-more-container .read-more a,footer.footer-layout #top-footer .widget-title::first-letter,footer.footer-layout #top-footer .widget ul li a:hover,footer.footer-layout #bottom-footer .copyright .copyright-text a:hover,footer.footer-layout #bottom-footer .footer-menu ul li a:hover,.archive #primary .entry-content-block h2.entry-title a:hover,.blog #primary .entry-content-block h2.entry-title a:hover,#secondary .widget ul li a:hover,.woocommerce-Price-amount.amount,.team-wrapper .team-content-wrapper .team-social a:hover,.testimonial-container .testimonial-wrapper .testimonial-slide .testominial-content-wrapper .testimonial-icon,.footer-menu li a:hover,.tg-feature-product-filter-layout .button.is-checked:hover,.testimonial-container .testimonial-icon,#site-navigation ul li.menu-item-has-children:hover > .sub-toggle,#secondary .widget ul li a,#comments .comment-list article.comment-body .reply a,.tg-slider-widget .btn-wrapper a{
+		color: #F54337;
+	}
+
+	.feature-product-section .tg-feature-product-layout-2 .tg-container .tg-column-wrapper .tg-feature-product-widget .featured-image-desc, #respond #commentform .form-submit input:hover, .blog-section .tg-blog-widget-layout-1 .tg-blog-widget:hover,#scroll-up,.header-bottom .search-wrap .search-box .searchform .btn:hover,.header-bottom .cart-wrap .flash-cart-views a span,body.transparent #masthead .header-bottom #site-navigation ul li a::before,.tg-slider-widget.slider-dark .btn-wrapper a:hover,.section-title:after,.about-section .about-content-wrapper .btn-wrapper a,.tg-service-widget .service-icon-wrap,.team-wrapper .team-content-wrapper .team-designation:after,.call-to-action-section .btn-wrapper a:hover,.blog-section .tg-blog-widget-layout-1:hover,.blog-section .tg-blog-widget-layout-2 .post-image .entry-date,.blog-section .tg-blog-widget-layout-2 .blog-content .post-readmore,.pricing-table-section .tg-pricing-table-widget:hover,.pricing-table-section .tg-pricing-table-widget.tg-pricing-table-layout-2 .pricing,.pricing-table-section .tg-pricing-table-widget.tg-pricing-table-layout-2 .btn-wrapper a,footer.footer-layout #top-footer .widget_tag_cloud .tagcloud a:hover,#secondary .widget-title:after,#secondary .searchform .btn:hover,#primary .searchform .btn:hover,  #respond #commentform .form-submit input,.woocommerce ul.products li.product .onsale,.woocommerce ul.products li.product .button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.added_to_cart.wc-forward,.testimonial-container .swiper-pagination.testimonial-pager .swiper-pagination-bullet:hover, .testimonial-container .swiper-pagination.testimonial-pager .swiper-pagination-bullet.swiper-pagination-bullet-active,.header-bottom .searchform .btn,.navigation .nav-links a:hover, .bttn:hover, button, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,.tg-slider-widget .btn-wrapper a:hover  {
+		background-color: #F54337;
+	}
+	body.transparent.header-sticky #masthead-sticky-wrapper #masthead .header-bottom .search-wrap .search-icon:hover, body.transparent #masthead .header-bottom .search-wrap .search-icon:hover, .header-bottom .search-wrap .search-icon:hover,#comments .comment-list article.comment-body .reply a::before,.tg-slider-widget .btn-wrapper a, .tg-slider-widget .btn-wrapper a:hover {
+	  border-color: #F54337;
+	}
+	body.transparent.header-sticky #masthead-sticky-wrapper.is-sticky #masthead .header-bottom #site-navigation ul li.current-flash-item a,#site-navigation ul li.current-flash-item a, body.transparent.header-sticky #masthead-sticky-wrapper #masthead .header-bottom .search-wrap .search-icon:hover, body.transparent #masthead .header-bottom .search-wrap .search-icon:hover, .header-bottom .search-wrap .search-icon:hover {
+	  color: #F54337;
+	}
+	.tg-slider-widget.slider-dark .btn-wrapper a:hover,.call-to-action-section .btn-wrapper a:hover,footer.footer-layout #top-footer .widget_tag_cloud .tagcloud a:hover {
+		border-color: #F54337;
+	}
+	body.transparent.header-sticky #masthead-sticky-wrapper #masthead .header-bottom #site-navigation ul li:hover > a,body.transparent #masthead .header-bottom #site-navigation ul li:hover .sub-toggle{
+		color: #F54337;
+	}
+
+	.tg-service-widget .service-icon-wrap:after{
+			border-top-color: #F54337;
+		}
+
+	.feature-product-section .tg-feature-product-widget .featured-image-desc::before,.blog-section .row:nth-child(odd) .tg-blog-widget:hover .post-image::before,.blog-section .row:nth-child(2n) .tg-blog-widget:hover .post-image::before{
+			border-right-color: #F54337;
+		}
+
+	.feature-product-section .tg-feature-product-widget .featured-image-desc::before,.blog-section .row:nth-child(odd) .tg-blog-widget:hover .post-image::before,footer.footer-layout #top-footer .widget-title{
+		border-left-color: #F54337;
+	}
+
+	/* Main Text Color */
+	.tg-slider-widget .swiper-button-next::before,.tg-slider-widget .swiper-button-prev::before,.tg-slider-widget .caption-title,.section-title-wrapper .section-title,.tg-service-widget .service-title-wrap a ,.team-wrapper .team-content-wrapper .team-title a,.testimonial-container .testimonial-wrapper .testimonial-slide .testimonial-client-detail .client-detail-block .testimonial-title,.blog-section .row:nth-child(odd) .blog-content .entry-title a,.blog-section .row:nth-child(even) .blog-content .entry-title a,.blog-section .tg-blog-widget:hover .blog-content .entry-title a:hover,.blog-section .tg-blog-widget-layout-2 .tg-blog-widget:hover .blog-content .entry-title a,.pricing-table-section .tg-pricing-table-widget .pricing-table-title ,.pricing-table-section .tg-pricing-table-widget .pricing,.pricing-table-section .tg-pricing-table-widget .btn-wrapper a,.pricing-table-section .tg-pricing-table-widget.standard .popular-batch,.single-post #primary .author-description .author-description-block .author-title,.section-title-wrapper .section-title,.tg-service-widget .service-title-wrap a,.tg-service-widget .service-title-wrap a,.blog-section .tg-blog-widget-layout-2 .entry-title a,.entry-content-block .entry-title a,.blog #primary .entry-content-block .entry-content,.breadcrumb-trail.breadcrumbs .trail-title,#secondary .widget-title,#secondary .widget ul li,.archive #primary .entry-content-block .entry-content,.entry-content, .entry-summary,#comments .comments-title,#comments .comment-list article.comment-body .comment-content,.comment-reply-title,.search .entry-title a,.section-title,.blog-section .row:nth-child(odd) .entry-summary,.blog-section .row:nth-child(even) .entry-summary,.blog-wrapper .entry-title a,.tg-blog-widget-layout-3 .entry-title a,.feature-product-section .tg-feature-product-widget .feature-title-wrap a,.team-wrapper .team-title,.testimonial-container .testimonial-content{
+		color: #333333;
+	}
+
+	.header-bottom .search-wrap .search-box .searchform .btn,.testimonial-container .swiper-pagination.testimonial-pager .swiper-pagination-bullet{
+		background-color: #333333;
+	}
+
+	.feature-product-section .tg-feature-product-layout-2 .tg-container .tg-column-wrapper .tg-feature-product-widget .featured-image-desc::before{
+		border-right-color: #333333;
+	}
+
+	/* Secondary Text Color */
+	.tg-service-widget .service-content-wrap,.section-title-wrapper .section-description,.team-wrapper .team-content-wrapper .team-content,.testimonial-container .testimonial-wrapper .testimonial-slide .testominial-content-wrapper .testimonial-content, button, input, select, textarea,.entry-meta a,.cat-links a,.entry-footer a,.entry-meta span,.single .entry-content-block .entry-footer span a,.single .entry-content-block .entry-footer span,#comments .comment-list article.comment-body .comment-metadata a,#comments .comment-list article.comment-body .comment-author,#respond #commentform p,.testimonial-container .testimonial-degicnation,.fun-facts-section .fun-facts-title-wrap,.blog-section .row:nth-child(odd) .entry-meta a,.blog-section .row:nth-child(even) .entry-meta a,.tg-blog-widget-layout-2 .read-more-container .entry-author a,.blog-section .tg-blog-widget-layout-2 .read-more-container .entry-author,.tg-slider-widget .caption-desc {
+		color: #777777;
+	}
+
+	@media(max-width: 980px){
+		#site-navigation ul li.menu-item-has-children .sub-toggle {
+			background-color: #F54337;
+		}
+	}
+
+	@media screen and (min-width: 56.875em) {
+		.main-navigation li:hover > a,
+		.main-navigation li.focus > a {
+			color: #F54337;
+		}
+
+		.main-navigation ul ul,
+		.main-navigation ul ul li {
+			border-color: rgba( 51, 51, 51, 0.2);
+		}
+
+		.main-navigation ul ul:before {
+			border-top-color: rgba( 51, 51, 51, 0.2);
+			border-bottom-color: rgba( 51, 51, 51, 0.2);
+		}
+	}
+
+
+	/* Custom Link Color */
+	#site-navigation ul li:hover > a, #site-navigation ul li.current-menu-item > a, #site-navigation ul li.current_page_item > a, #site-navigation ul li.current_page_ancestor > a, #site-navigation ul li.current-menu-ancestor > a,#site-navigation ul.sub-menu li:hover > a,#site-navigation ul li ul.sub-menu li.menu-item-has-children ul li:hover > a,#site-navigation ul li ul.sub-menu li.menu-item-has-children:hover > .menu-item,body.transparent #masthead .header-bottom #site-navigation ul li:hover > .menu-item,body.transparent #masthead .header-bottom #site-navigation ul li:hover > a,body.transparent #masthead .header-bottom #site-navigation ul.sub-menu li:hover > a,body.transparent #masthead .header-bottom #site-navigation ul.sub-menu li.menu-item-has-children ul li:hover > a,body.transparent.header-sticky #masthead-sticky-wrapper #masthead .header-bottom #site-navigation ul.sub-menu li > a:hover,.tg-service-widget .service-title-wrap a:hover,.tg-service-widget .service-more,.feature-product-section .button-group button:hover ,.fun-facts-section .fun-facts-icon-wrap,.fun-facts-section .tg-fun-facts-widget.tg-fun-facts-layout-2 .counter-wrapper,.blog-section .tg-blog-widget-layout-2 .blog-content .read-more-container .read-more a,footer.footer-layout #top-footer .widget-title::first-letter,footer.footer-layout #top-footer .widget ul li a:hover,footer.footer-layout #bottom-footer .copyright .copyright-text a:hover,footer.footer-layout #bottom-footer .footer-menu ul li a:hover,.archive #primary .entry-content-block h2.entry-title a:hover,.blog #primary .entry-content-block h2.entry-title a:hover,#secondary .widget ul li a:hover,.woocommerce-Price-amount.amount,.team-wrapper .team-content-wrapper .team-social a:hover,.testimonial-container .testimonial-wrapper .testimonial-slide .testominial-content-wrapper .testimonial-icon,.footer-menu li a:hover,.tg-feature-product-filter-layout .button.is-checked:hover,.testimonial-container .testimonial-icon,#site-navigation ul li.menu-item-has-children:hover > .sub-toggle,.woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before,#primary .post .entry-content-block .entry-meta a:hover,#primary .post .entry-content-block .entry-meta span:hover,.entry-meta span:hover a,.post .entry-content-block .entry-footer span a:hover,#secondary .widget ul li a,#comments .comment-list article.comment-body .reply a,.tg-slider-widget .btn-wrapper a,.entry-content a, .related-posts-wrapper .entry-title a:hover,
+		.related-posts-wrapper .entry-meta > span a:hover{
+			color: #1cac1c;
+	}
+
+	.blog-section .tg-blog-widget-layout-1 .tg-blog-widget:hover, #scroll-up,.header-bottom .search-wrap .search-box .searchform .btn:hover,.header-bottom .cart-wrap .flash-cart-views a span,body.transparent #masthead .header-bottom #site-navigation ul li a::before,.tg-slider-widget.slider-dark .btn-wrapper a:hover, .section-title:after,.about-section .about-content-wrapper .btn-wrapper a,.tg-service-widget .service-icon-wrap,.team-wrapper .team-content-wrapper .team-designation:after,.call-to-action-section .btn-wrapper a:hover,.blog-section .tg-blog-widget-layout-1:hover,.blog-section .tg-blog-widget-layout-2 .post-image .entry-date,.blog-section .tg-blog-widget-layout-2 .blog-content .post-readmore,.pricing-table-section .tg-pricing-table-widget:hover,.pricing-table-section .tg-pricing-table-widget.tg-pricing-table-layout-2 .pricing,.pricing-table-section .tg-pricing-table-widget.tg-pricing-table-layout-2 .btn-wrapper a,footer.footer-layout #top-footer .widget_tag_cloud .tagcloud a:hover,#secondary .widget-title:after, #secondary .searchform .btn:hover,#primary .searchform .btn:hover,  #respond #commentform .form-submit input,.woocommerce span.onsale, .woocommerce ul.products li.product .onsale,.woocommerce ul.products li.product .button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.added_to_cart.wc-forward,.testimonial-container .swiper-pagination.testimonial-pager .swiper-pagination-bullet:hover, .testimonial-container .swiper-pagination.testimonial-pager .swiper-pagination-bullet.swiper-pagination-bullet-active,.header-bottom .searchform .btn,.navigation .nav-links a:hover, .bttn:hover, button, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,.tg-slider-widget .btn-wrapper a:hover  {
+		background-color: #1cac1c;
+	}
+	.feature-product-section .tg-feature-product-layout-2 .tg-container .tg-column-wrapper .tg-feature-product-widget .featured-image-desc, .tg-team-widget.tg-team-layout-3 .team-wrapper .team-img .team-social {
+		background-color: rgba( 28, 172, 28, 0.8);
+	}
+	#respond #commentform .form-submit input:hover{
+	background-color: #089808;
+	}
+
+	.tg-slider-widget.slider-dark .btn-wrapper a:hover,.call-to-action-section .btn-wrapper a:hover,footer.footer-layout #top-footer .widget_tag_cloud .tagcloud a:hover,.woocommerce-error, .woocommerce-info, .woocommerce-message,#comments .comment-list article.comment-body .reply a::before,.tg-slider-widget .btn-wrapper a, .tg-slider-widget .btn-wrapper a:hover {
+		border-color: #1cac1c;
+	}
+	body.transparent.header-sticky #masthead-sticky-wrapper.is-sticky #site-navigation ul li.current-flash-item a, #site-navigation ul li.current-flash-item a, body.transparent.header-sticky #masthead-sticky-wrapper #site-navigation ul li:hover > a,body.transparent #site-navigation ul li:hover .sub-toggle{
+			color: #1cac1c;
+		}
+
+	.tg-service-widget .service-icon-wrap:after{
+			border-top-color: #1cac1c;
+		}
+	body.transparent.header-sticky #masthead-sticky-wrapper .search-wrap .search-icon:hover, body.transparent .search-wrap .search-icon:hover, .header-bottom .search-wrap .search-icon:hover {
+	  border-color: #1cac1c;
+	}
+	body.transparent.header-sticky #masthead-sticky-wrapper .search-wrap .search-icon:hover, body.transparent #masthead .header-bottom .search-wrap .search-icon:hover, .header-bottom .search-wrap .search-icon:hover,.breadcrumb-trail.breadcrumbs .trail-items li:first-child span:hover,.breadcrumb-trail.breadcrumbs .trail-items li span:hover a {
+	  color: #1cac1c;
+	}
+	.woocommerce ul.products li.product .button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.added_to_cart.wc-forward:hover{
+		background-color: #089808;
+	}
+
+	.feature-product-section .tg-feature-product-widget .featured-image-desc::before,.blog-section .row:nth-child(odd) .tg-blog-widget:hover .post-image::before{
+			border-right-color: #1cac1c;
+		}
+	.feature-product-section .tg-feature-product-widget .featured-image-desc::before,.blog-section .row:nth-child(odd) .tg-blog-widget:hover .post-image::before,footer.footer-layout #top-footer .widget-title,.blog-section .row:nth-child(2n) .tg-blog-widget:hover .post-image::before{
+		border-left-color: #1cac1c;
+	}
+	.blog-section .tg-blog-widget-layout-2 .entry-title a:hover,
+	.blog-section .tg-blog-widget-layout-2 .tg-blog-widget:hover .blog-content .entry-title a:hover,
+	.tg-blog-widget-layout-2 .read-more-container .entry-author:hover a,
+	.tg-blog-widget-layout-2 .read-more-container .entry-author:hover,
+	.blog-section .tg-blog-widget-layout-2 .read-more-container .read-more:hover a{
+			color: #089808;
+		}
+
+	.tg-service-widget .service-more:hover{
+		color: #089808;
+	}
+
+	@media(max-width: 980px){
+		#site-navigation ul li.menu-item-has-children span.sub-toggle {
+			background-color: #1cac1c;
+		}
+	}
+
+		@media screen and (min-width: 56.875em) {
+			.main-navigation li:hover > a,
+			.main-navigation li.focus > a {
+				color: #1cac1c;
+			}
+		}
+	
+
+		/* Custom Secondary Text Color */
+		.tg-service-widget .service-content-wrap,.section-title-wrapper .section-description,.team-wrapper .team-content-wrapper .team-content,.testimonial-container .testimonial-wrapper .testimonial-slide .testominial-content-wrapper .testimonial-content, button, input, select, textarea,.entry-meta a,.cat-links a,.entry-footer a,.entry-meta span,.single .entry-content-block .entry-footer span a,.single .entry-content-block .entry-footer span,#comments .comment-list article.comment-body .comment-metadata a,#comments .comment-list article.comment-body .comment-author,#respond #commentform p,.testimonial-container .testimonial-degicnation,.fun-facts-section .fun-facts-title-wrap,.blog-section .row:nth-child(odd) .entry-meta a,.blog-section .row:nth-child(even) .entry-meta a,.tg-blog-widget-layout-2 .read-more-container .entry-author a,.blog-section .tg-blog-widget-layout-2 .read-more-container .entry-author,.tg-slider-widget .caption-desc  {
+			color: #333333;
+		}
+	
+
+		/* Site Title */
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute !important;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+		}
+		.logo .logo-text{
+			padding: 0;
+		}
+		
+</style>
+<link rel='stylesheet' id='responsive-css' href='https://hungrygopher.com/wp-content/themes/flash/css/responsive.min.css?ver=6.3.7' type='text/css' media='' />
+<link rel='stylesheet' id='aurora-heatmap-css' href='https://hungrygopher.com/wp-content/plugins/aurora-heatmap/style.css?ver=1.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css' href='https://hungrygopher.com/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.2' type='text/css' media='screen' />
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=10.0.3' id='monsterinsights-frontend-script-js' async data-wp-strategy='async'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/hungrygopher.com","hash_tracking":"false","v4_id":"G-C5PNMHEJSK"};/* ]]> */
+</script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script id="simple-banner-script-js-before" type="text/javascript">
+const simpleBannerScriptParams = {"version":"2.17.3","hide_simple_banner":"yes","simple_banner_prepend_element":"body","simple_banner_position":"initial","header_margin":"40px","header_padding":"20px","simple_banner_z_index":"","simple_banner_text":"<a href=\"https:\/\/calendly.com\/hungrygopher\/health_boost_discovery_call\">\ud83c\udf89 Limited Enrollment Opens June 6 - Join the 90-Day Korean Gut &amp; Skin Rejuvenation Program (Only 6 spots)\u27a4 Reserve your spot now<\/a>","pro_version_enabled":"","disabled_on_current_page":false,"debug_mode":"","id":3940,"disabled_pages_array":[],"is_current_page_a_post":false,"disabled_on_posts":"","simple_banner_disabled_page_paths":"","simple_banner_font_size":"","simple_banner_color":"#03a300","simple_banner_text_color":"","simple_banner_link_color":"#ffffff","simple_banner_close_color":"","simple_banner_custom_css":"","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","simple_banner_button_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","wp_body_open_enabled":"","wp_body_open":true,"close_button_enabled":"","close_button_expiration":"","close_button_cookie_set":false,"current_date":{"date":"2026-03-09 04:11:29.421910","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2026-03-09 04:11:29.421918","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2026-03-09 04:11:29.421922","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":"","simple_banner_remove_after_date":"","simple_banner_insert_inside_element":""}
+</script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/plugins/simple-banner/simple-banner.js?ver=2.17.3' id='simple-banner-script-js'></script>
+<script type='text/javascript' id='aurora-heatmap-js-extra'>
+/* <![CDATA[ */
+var aurora_heatmap = {"_mode":"reporter","ajax_url":"https:\/\/hungrygopher.com\/wp-admin\/admin-ajax.php","action":"aurora_heatmap","reports":"click_pc,click_mobile","debug":"0","ajax_delay_time":"3000","ajax_interval":"10","ajax_bulk":null};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/plugins/aurora-heatmap/js/aurora-heatmap.min.js?ver=1.7.0' id='aurora-heatmap-js'></script>
+<link rel="https://api.w.org/" href="https://hungrygopher.com/wp-json/" /><link rel="alternate" type="application/json" href="https://hungrygopher.com/wp-json/wp/v2/pages/3940" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hungrygopher.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.7" />
+<meta name="generator" content="Everest Forms 3.0.1" />
+<link rel='shortlink' href='https://hungrygopher.com/?p=3940' />
+<link rel="alternate" type="application/json+oembed" href="https://hungrygopher.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhungrygopher.com%2Fkimchi-how-to-make-top-3-easy-kimchi-recipes%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://hungrygopher.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhungrygopher.com%2Fkimchi-how-to-make-top-3-easy-kimchi-recipes%2F&#038;format=xml" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62393219-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62393219-1');
+</script><style type="text/css">.simple-banner{display:none;}</style><style type="text/css">.simple-banner{position:initial;}</style><style type="text/css">.simple-banner{background:#03a300;}</style><style type="text/css">.simple-banner .simple-banner-text{color: #ffffff;}</style><style type="text/css">.simple-banner .simple-banner-text a{color:#ffffff;}</style><style type="text/css">.simple-banner{z-index: 99999;}</style><style id="simple-banner-site-custom-css-dummy" type="text/css"></style><script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script>            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-block-placeholder,.wpp-shortcode-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+            <link rel="icon" href="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-logo.png" sizes="32x32" />
+<link rel="icon" href="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-logo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-logo.png" />
+<meta name="msapplication-TileImage" content="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-logo.png" />
+		<style type="text/css" id="wp-custom-css">
+			.call-to-action-section .section-title-wrapper .section-title{font-size:50px;line-height:1.5;letter-spacing:3px}.call-to-action-section .section-title-wrapper .section-subtitle{font-size:20px}.footer-block .widget{text-align:center}a img{padding:0}
+
+.transparent #site-navigation ul li a {
+    color: black!important;
+	  font-size: 125%;
+}
+.transparent .search-wrap .search-icon {
+        color: #99a3b0;
+        border: 1px solid #9ca6b2;
+}
+.transparent #site-navigation ul li a:hover{
+        color: #cd2122 !important;
+	      font-size: 125%;
+}
+
+.main-navigation li, body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: Arial;
+}
+.tags-links { display:none;}
+
+.cat-links {display:none;}
+
+.nav-previous a {
+display: none !important;
+}
+.nav-next a {
+display: none !important;
+}
+
+.page .site-content a:link {
+color: #ff0000 !important;
+}
+.page .site-content a:visited {
+color: #ff0000  !important;
+}
+.page .site-content a:hover {
+color: green  !important;
+}
+.page .site-content a:active {
+color: green  !important;
+}
+table, th, td {
+  border: 0;
+	line-height: 90%;
+	margin-left: 7%;
+}
+
+#top-footer {
+    background-color: #D8D8D8;
+}
+#top-footer .widget-title {
+	color: #000;
+}
+#top-footer .menu-social-media-container a:link {
+	color:red !important;
+}
+
+#top-footer .menu-social-media-container a:hover {
+	color:green !important;
+}
+#top-footer .textwidget a:link {
+	color:red !important;
+}
+#top-footer .textwidget a:hover {
+	color:green !important;
+}
+#top-footer a {
+	color:red;
+}
+
+.transparent #site-navigation .menu-toggle .fa {
+    color: #000000 !important;
+}
+#bottom-footer {
+    background-color: #CACACA;
+}
+#bottom-footer a {
+	color:red;
+}
+#bottom-footer a:hover {
+	color: green;
+}
+#bottom-footer ul {
+	list-style-type: none;
+}
+
+#bottom-footer .copyright-text {
+	color:black;}
+#bottom-footer .copyright-text a {
+	color:red;}
+#bottom-footer .copyright-text a:hover {
+	color:green!important;}
+
+.page-id-4191 .main-navigation {display:none;
+ }
+
+.post {font-size: 120% !important; line-height: 1.5em !important;  }
+
+/* iFrame Settings */
+.model-box {
+  position:   relative;
+  width:      100%;
+  height: 0;
+  padding-top:   66.6%; /* This is your aspect ratio */ }
+
+.model {
+  position: absolute;
+  top:      0;
+  left:     0;
+  bottom:   0;
+  right:    0;
+  width:    100%;
+  height:   100%
+}
+/* iFrame Settings */
+		</style>
+		<style id="kirki-inline-styles">body{font-family:Ruda;font-weight:400;}/* cyrillic */
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://hungrygopher.com/wp-content/fonts/ruda/font) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://hungrygopher.com/wp-content/fonts/ruda/font) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://hungrygopher.com/wp-content/fonts/ruda/font) format('woff');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://hungrygopher.com/wp-content/fonts/ruda/font) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-border-style: solid;
+--wpforms-field-border-size: 1px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-border-color-spare: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-field-menu-color: #ffffff;
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-border-style: none;
+--wpforms-button-border-size: 1px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-border-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-page-break-color: #066aab;
+--wpforms-background-image: none;
+--wpforms-background-position: center center;
+--wpforms-background-repeat: no-repeat;
+--wpforms-background-size: cover;
+--wpforms-background-width: 100px;
+--wpforms-background-height: 100px;
+--wpforms-background-color: rgba( 0, 0, 0, 0 );
+--wpforms-background-url: none;
+--wpforms-container-padding: 0px;
+--wpforms-container-border-style: none;
+--wpforms-container-border-width: 1px;
+--wpforms-container-border-color: #000000;
+--wpforms-container-border-radius: 3px;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+--wpforms-container-shadow-size-box-shadow: none;
+
+				}
+			</style></head>
+
+<body class="page-template-default page page-id-3940 wp-custom-logo wp-embed-responsive everest-forms-no-js  left-logo-right-menu full-width error404 pp404-std">
+
+
+
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+	<header id="masthead" class="site-header" role="banner">
+				<div class="header-top">
+			<div class="tg-container">
+				<div class="tg-column-wrapper clearfix">
+					<div class="left-content">
+											</div>
+					<div class="right-content">
+											</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="header-bottom">
+			<div class="tg-container">
+
+				<div class="logo">
+										<figure class="logo-image">
+						<a href="https://hungrygopher.com/" class="custom-logo-link" rel="home"><img width="1024" height="1024" src="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design.png" class="custom-logo" alt="Heal Your Skin with Sun | Hungry Gopher Inc." decoding="async" fetchpriority="high" srcset="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design.png 1024w, https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design-300x300.png 300w, https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design-150x150.png 150w, https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Heal-Your-Skin-Logo-Design-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>											</figure>
+					
+					<div class="logo-text site-branding">
+													<p class="site-title"><a href="https://hungrygopher.com/" rel="home">Heal Your Skin with Sun | Hungry Gopher Inc.</a></p>
+													<p class="site-description">Natural Gut &amp; Skin Healing for Busy Women with Chronic Flares</p>
+											</div>
+				</div>
+				<div class="site-navigation-wrapper">
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div class="menu-toggle">
+							<i class="fa fa-bars"></i>
+						</div>
+						<div class="menu-primary-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-5018" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5018"><a href="https://hungrygopher.com/about/">About</a></li>
+<li id="menu-item-4123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4123"><a href="https://hungrygopher.com/products/">Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-6328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6328"><a href="https://hungrygopher.com/eat-to-heal-cheat-sheets-pwyw/">The Clear Skin Cheat Sheets</a></li>
+	<li id="menu-item-660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660"><a href="https://korean-clear-skin-formula.teachable.com/p/korean-clear-skin-formula">Korean Clear Skin Formula</a></li>
+	<li id="menu-item-6329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6329"><a href="https://hungry-gopher.ck.page/086d51d8e8">Clear Skin Transformation Audit</a></li>
+	<li id="menu-item-6330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6330"><a href="https://hungrygopher.com/kimchi-pwyw/">Kimchi &#8211; Book</a></li>
+	<li id="menu-item-6331" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6331"><a href="https://hungrygopher.com/kimchihealth-enrollment/">Kimchi Health Formula</a></li>
+</ul>
+</li>
+<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-165"><a href="https://hungrygopher.com/blog/">Vlog</a>
+<ul class="sub-menu">
+	<li id="menu-item-2946" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2946"><a href="https://hungrygopher.com/category/recipes/">Clear Skin Recipes</a></li>
+	<li id="menu-item-2944" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2944"><a href="https://hungrygopher.com/category/health-wellness-advice/">Clear Skin Tips</a></li>
+	<li id="menu-item-2943" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2943"><a href="https://hungrygopher.com/category/kimchi/">Kimchi</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4583" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4583"><a href="https://hungrygopher.com/category/kimchi/kimchi-recipes/">Kimchi Recipes</a></li>
+		<li id="menu-item-4582" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4582"><a href="https://hungrygopher.com/category/kimchi/kimchi-tips/">Kimchi Tips</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2945" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2945"><a href="https://hungrygopher.com/category/korean-food/">Korean Food</a></li>
+	<li id="menu-item-3539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3539"><a href="https://hungrygopher.com/blog/">All Blogs</a></li>
+</ul>
+</li>
+</ul></div>					</nav><!-- #site-navigation -->
+
+					
+									</div>
+
+				<div class="header-action-container">
+					
+										<div class="search-wrap">
+						<div class="search-icon">
+							<i class="fa fa-search"></i>
+						</div>
+						<div class="search-box">
+							
+<form role="search" method="get" class="searchform" action="https://hungrygopher.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit btn search-btn"><span class="screen-reader-text">Search</span><i class="fa fa-search"></i></button>
+</form>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	
+	<div id="wp-custom-header" class="wp-custom-header"><img src="https://hungrygopher.com/wp-content/uploads/2025/08/cropped-Screenshot-2025-08-01-at-4.35.56 PM.png" width="199" height="70" alt="" decoding="async" /></div>
+		<nav id="flash-breadcrumbs" class="breadcrumb-trail breadcrumbs">
+		<div class="tg-container">
+			<h1 class="trail-title">Kimchi how to make (top 3 easy kimchi recipes)</h1>			<ul class="trail-items"><li class="trail-item trail-begin"><a class="trail-home" href="https://hungrygopher.com" title="Home"><span>Home</span></a></li><li class="trail-item"><span>Kimchi how to make (top 3 easy kimchi recipes)</span></li></ul>		</div>
+	</nav>
+	
+	
+	<div id="content" class="site-content">
+		<div class="tg-container">
+
+	
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+<article id="post-3940" class="post-3940 page type-page status-publish hentry">
+
+	
+	<div class="entry-content">
+		<p style="text-align: center; font-size: 300%;">SORRY</p>
+<p style="text-align: center;">We couldn’t find that page</p>
+<p style="text-align: center;">Try searching or go to <a href="https://hungrygopher.com/">HungryGopher’s</a> homepage.</p>
+<p style="text-align: center; font-size: 300%;"><img decoding="async" loading="lazy" class="size-full wp-image-4028 aligncenter" src="https://hungrygopher.com/wp-content/uploads/2019/11/404-image.jpg" alt="404-Page" width="600" height="600" srcset="https://hungrygopher.com/wp-content/uploads/2019/11/404-image.jpg 600w, https://hungrygopher.com/wp-content/uploads/2019/11/404-image-300x300.jpg 300w, https://hungrygopher.com/wp-content/uploads/2019/11/404-image-150x150.jpg 150w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p style="text-align: center;">Unleash your Curiosity!</p>
+	</div><!-- .entry-content -->
+
+	
+	
+</article><!-- #post-## -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	
+
+		</div><!-- .tg-container -->
+	</div><!-- #content -->
+
+	
+	
+	<footer id="colophon" class="footer-layout site-footer" role="contentinfo">
+		<div id="top-footer">
+	<div class="tg-container">
+		<div class="tg-column-wrapper">
+
+							<div class="tg-column-1 footer-block">
+
+				<section id="block-3" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-full"><img decoding="async" loading="lazy" width="199" height="98" src="https://hungrygopher.com/wp-content/uploads/2025/08/Screenshot-2025-08-01-at-4.35.56 PM.png" alt="" class="wp-image-6467"/></figure>
+</section>				</div>
+
+					</div>
+	</div>
+</div>
+
+		<div id="bottom-footer">
+			<div class="tg-container">
+
+					<div class="copyright"><span class="copyright-text">Copyright &copy; 2026 <a href="https://hungrygopher.com/" title="Heal Your Skin with Sun | Hungry Gopher Inc." ><span>Heal Your Skin with Sun | Hungry Gopher Inc..</span></a> </span></div>
+					<div class="menu-social-media-container"><ul id="menu-social-media" class="footer-menu"><li id="menu-item-4081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4081"><a href="https://www.youtube.com/channel/UCCfrzugYEobvAf4ECIG6Ktw">YouTube</a></li>
+<li id="menu-item-3575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3575"><a href="https://facebook.com/hungrygopher">Facebook</a></li>
+<li id="menu-item-4082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4082"><a href="https://www.pinterest.com/hungrygopher/hungry-gopher-a-simply-delicious-korean-cooking-sh/">Pnterest</a></li>
+</ul></div>
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+
+	
+		<a href="#masthead" id="scroll-up"><i class="fa fa-chevron-up"></i></a>
+	</div><!-- #page -->
+
+
+<div class="simple-banner simple-banner-text" style="display:none !important"></div>	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace( /everest-forms-no-js/, 'everest-forms-js' );
+		document.body.className = c;
+	</script>
+	<script type='text/javascript' id='convertkit-broadcasts-js-extra'>
+/* <![CDATA[ */
+var convertkit_broadcasts = {"ajax_url":"https:\/\/hungrygopher.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=2.8.2' id='convertkit-broadcasts-js'></script>
+<script type='text/javascript' src='https://hungry-gopher.kit.com/commerce.js?ver=6.3.7' id='convertkit-commerce-js'></script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/plugins/honeypot/includes/js/wpa.js?ver=2.2.01' id='wpascript-js'></script>
+<script id="wpascript-js-after" type="text/javascript">
+wpa_field_info = {"wpa_field_name":"piqzwa5421","wpa_field_value":277154,"wpa_add_test":"no"}
+</script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/themes/flash/js/jquery.nav.min.js?ver=6.3.7' id='nav-js'></script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/themes/flash/js/flash.min.js?ver=6.3.7' id='flash-custom-js'></script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/themes/flash/js/navigation.min.js?ver=6.3.7' id='flash-navigation-js'></script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/themes/flash/js/skip-link-focus-fix.js?ver=20151215' id='flash-skip-link-focus-fix-js'></script>
+<script type='text/javascript' id='convertkit-js-js-extra'>
+/* <![CDATA[ */
+var convertkit = {"ajaxurl":"https:\/\/hungrygopher.com\/wp-admin\/admin-ajax.php","debug":"","nonce":"8256c49f28","subscriber_id":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://hungrygopher.com/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=2.8.2' id='convertkit-js-js'></script>
+
+</body>
+</html>

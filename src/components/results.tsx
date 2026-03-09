@@ -186,6 +186,52 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
         )}
       </div>
 
+      {/* 投票分布总览 */}
+      {votes.length > 0 && (
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-text mb-4 flex items-center gap-2">
+            <span>📊</span> 投票分布总览
+          </h3>
+          <div className="bg-white border-[1.5px] border-line rounded-2xl overflow-hidden shadow-lg">
+            {/* 图例 */}
+            <div className="px-4 py-2.5 border-b border-line bg-[#fdf7f3] flex flex-wrap gap-3 text-[11px]">
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-brand inline-block" /> 选 A</span>
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-[#7c9ebd] inline-block" /> 选 B</span>
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-[#e8714a] inline-block" /> 都要</span>
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-[#d0c8c0] inline-block" /> 都不要</span>
+            </div>
+            <div className="divide-y divide-line">
+              {tally.map(item => {
+                const total = votes.length || 1;
+                const pctA = (item.optA.count / total) * 100;
+                const pctB = (item.optB.count / total) * 100;
+                const pctBoth = (item.bothVoters.length / total) * 100;
+                const pctNeither = (item.neitherVoters.length / total) * 100;
+                const shortTitle = item.question.title.split('：')[0] || item.question.title;
+                const cat = CATEGORIES.find(c => c.id === item.question.category);
+                return (
+                  <div key={item.question.id} className="px-4 py-2.5 flex items-center gap-3">
+                    <div className="w-[100px] md:w-[140px] flex-shrink-0 min-w-0">
+                      <span className="text-[10px] text-muted">{cat?.emoji}</span>
+                      <span className="text-[11px] md:text-xs font-semibold text-text ml-1 truncate">{shortTitle}</span>
+                    </div>
+                    <div className="flex-1 h-5 bg-[#f0e4db] rounded-full overflow-hidden flex">
+                      {pctA > 0 && <div className="h-full bg-brand transition-all duration-500" style={{ width: `${pctA}%` }} />}
+                      {pctB > 0 && <div className="h-full bg-[#7c9ebd] transition-all duration-500" style={{ width: `${pctB}%` }} />}
+                      {pctBoth > 0 && <div className="h-full bg-[#e8714a] transition-all duration-500" style={{ width: `${pctBoth}%` }} />}
+                      {pctNeither > 0 && <div className="h-full bg-[#d0c8c0] transition-all duration-500" style={{ width: `${pctNeither}%` }} />}
+                    </div>
+                    <div className="w-10 text-right text-[11px] text-muted flex-shrink-0">
+                      {item.optA.count + item.optB.count + item.bothVoters.length + item.neitherVoters.length}票
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* 按分类展示 VS 对比卡片 */}
       {CATEGORIES.map(cat => {
         const catTally = tally.filter(t => t.question.category === cat.id);
