@@ -29,8 +29,8 @@ export function Landing({ onStart, onViewResults }: LandingProps) {
   return (
     <section className="max-w-[1100px] mx-auto px-6 py-12 md:py-14">
       {/* 顶部提示 */}
-      <div className="mb-6 px-4 py-3 bg-[#fdf7f3] border border-[#f0ddd0] rounded-xl text-center">
-        <span className="text-sm text-[#8a6a50]">👇 请拉到页面最下方，输入名字开始投票</span>
+      <div className="mb-6 px-4 py-3.5 bg-gradient-to-r from-[#c94a1e]/10 to-[#e8714a]/10 border-[1.5px] border-[#e8714a]/30 rounded-xl text-center">
+        <span className="text-sm font-semibold text-brand">👇 请拉到页面最下方，输入名字开始投票</span>
       </div>
 
       {/* Header */}

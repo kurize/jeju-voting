@@ -228,7 +228,15 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
         </div>
 
         {/* 底部导航按钮 */}
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center gap-3 mt-6">
+          {currentQ > 0 && (
+            <button
+              onClick={goPrev}
+              className="px-5 py-3 rounded-xl text-sm font-semibold bg-white border-[1.5px] border-line text-muted hover:border-[#c8b0a0] hover:text-text transition-all flex items-center gap-1.5"
+            >
+              <ArrowLeft className="w-3.5 h-3.5" /> 上一题
+            </button>
+          )}
           <button
             onClick={goNext}
             disabled={submitting || !selectedId}
