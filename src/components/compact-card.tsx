@@ -58,7 +58,7 @@ export function CompactCard({ option, selectionState, onSelect, onExpand }: Comp
           onClick={(e) => { e.stopPropagation(); onExpand(); }}
           className="mt-1.5 text-[11px] text-muted underline underline-offset-2 hover:text-brand transition-colors"
         >
-          详情 & 地图
+          查看详情
         </button>
       </div>
     </article>

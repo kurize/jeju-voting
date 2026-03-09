@@ -282,11 +282,6 @@ function VsCard({ item }: { item: TallyItem }) {
             ))}
           </div>
 
-          {/* 地图链接 */}
-          <a href={optA.apple} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 mt-2 text-[11px] text-brand font-semibold hover:underline">
-            <MapPin className="w-3 h-3" /> 地图
-          </a>
         </div>
 
         {/* VS 分隔线 */}
@@ -322,11 +317,6 @@ function VsCard({ item }: { item: TallyItem }) {
             ))}
           </div>
 
-          {/* 地图链接 */}
-          <a href={optB.apple} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 mt-2 text-[11px] text-brand font-semibold hover:underline">
-            <MapPin className="w-3 h-3" /> 地图
-          </a>
         </div>
       </div>
 

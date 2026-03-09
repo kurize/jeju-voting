@@ -136,15 +136,6 @@ export function Card({ option, selectionState, onSelect }: CardProps) {
           >
             {selected ? '✓ 已选择' : selectionState === 'both' ? '❤️ 都要' : '投这一票'}
           </button>
-          <a
-            href={option.apple}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="py-2.5 px-3.5 rounded-[10px] text-[13px] font-semibold border-[1.5px] border-line bg-white text-muted hover:border-[#c8b0a0] hover:text-text transition-all whitespace-nowrap inline-flex items-center gap-1.5"
-          >
-            <MapPin className="w-3 h-3" /> 地图
-          </a>
         </div>
       </div>
     </article>

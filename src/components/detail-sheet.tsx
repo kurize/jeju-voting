@@ -77,14 +77,9 @@ export function DetailSheet({ option, open, onClose }: DetailSheetProps) {
 
           <p className="text-sm text-[#5a504a] leading-relaxed mt-3">{option.desc}</p>
 
-          <a
-            href={option.apple}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 w-full py-3 rounded-xl text-sm font-semibold bg-bg border border-line text-text flex items-center justify-center gap-1.5 hover:border-brand2 transition-colors"
-          >
-            <MapPin className="w-4 h-4" /> 在地图中查看
-          </a>
+          <div className="mt-3 text-xs text-muted flex items-center gap-1">
+            <MapPin className="w-3 h-3" /> {option.address}
+          </div>
         </div>
       </div>
     </div>
