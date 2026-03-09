@@ -186,23 +186,6 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
         )}
       </div>
 
-      {/* 按分类展示 VS 对比卡片 */}
-      {CATEGORIES.map(cat => {
-        const catTally = tally.filter(t => t.question.category === cat.id);
-        return (
-          <div key={cat.id} className="mb-8">
-            <h3 className="text-lg font-bold text-text mb-4 flex items-center gap-2">
-              <span>{cat.emoji}</span> {cat.label}
-            </h3>
-            <div className="flex flex-col gap-4">
-              {catTally.map(item => (
-                <VsCard key={item.question.id} item={item} />
-              ))}
-            </div>
-          </div>
-        );
-      })}
-
       {/* 餐厅人气排行 */}
       {votes.length > 0 && (
         <div className="mb-8">
@@ -236,6 +219,23 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
           </div>
         </div>
       )}
+
+      {/* 按分类展示 VS 对比卡片 */}
+      {CATEGORIES.map(cat => {
+        const catTally = tally.filter(t => t.question.category === cat.id);
+        return (
+          <div key={cat.id} className="mb-8">
+            <h3 className="text-lg font-bold text-text mb-4 flex items-center gap-2">
+              <span>{cat.emoji}</span> {cat.label}
+            </h3>
+            <div className="flex flex-col gap-4">
+              {catTally.map(item => (
+                <VsCard key={item.question.id} item={item} />
+              ))}
+            </div>
+          </div>
+        );
+      })}
 
       {/* 底部按钮 */}
       <div className="flex gap-2.5 flex-wrap mt-8">
