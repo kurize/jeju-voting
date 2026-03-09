@@ -240,4 +240,18 @@ export const QUESTIONS: Question[] = [
         address: '우도 (성산항에서 페리)', apple: 'https://www.google.com/maps/search/우도+성산항+제주' }
     ]
   },
+  {
+    id: 'q15', category: 'dessert-exp',
+    title: '济州休闲：三丽鸥主题咖啡 vs 韩式炸鸡？',
+    options: [
+      { id: 'loungej', name: 'Lounge J', zh: '三丽鸥主题咖啡馆', price: '₩5,000–10,000 / 人', area: '道头海岸',
+        tags: ['三丽鸥联名', '海景咖啡', '打卡圣地'],
+        desc: '济州航空在道头海岸道路开设的主题空间。1楼是三丽鸥联名周边店（Hello Kitty·酷洛米·大耳狗），2楼是海景咖啡厅+三丽鸥拍照区，还能看到飞机起降。',
+        address: '제주시 서해안로 360', apple: 'https://www.google.com/maps/search/라운지제이+제주+도두' },
+      { id: 'bhc', name: 'BHC치킨 제주탑동점', zh: '韩式炸鸡名店', price: '₩18,000–22,000 / 份', area: '塔洞',
+        tags: ['뿌링클炸鸡', '深夜宵夜', '韩国NO.1'],
+        desc: '韩国门店数量第一的炸鸡品牌，招牌뿌링클是芝士香草粉裹炸鸡，酥脆咸香。塔洞店位于济州市中心，营业到凌晨，是夜游后的完美宵夜选择。',
+        address: '제주시 중앙로 20', apple: 'https://www.google.com/maps/search/BHC치킨+제주탑동점' }
+    ]
+  },
 ];

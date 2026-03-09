@@ -42,7 +42,7 @@ export function Landing({ onStart, onViewResults }: LandingProps) {
           济州美食行程<br />投票问卷
         </h1>
         <p className="text-base text-muted max-w-[520px] mt-2">
-          6 人同行 · 共 14 道题 · 每题可选 A / B / 都要 / 都不要
+          6 人同行 · 共 15 道题 · 每题可选 A / B / 都要 / 都不要
         </p>
       </div>
 
@@ -96,7 +96,7 @@ export function Landing({ onStart, onViewResults }: LandingProps) {
             <div className="mt-4 p-3 bg-[#fdf7f3] rounded-xl border border-[#f0ddd0]">
               <div className="text-[11px] font-bold text-brand mb-1">📋 投票规则</div>
               <div className="text-[12px] text-[#5a504a] leading-relaxed">
-                14 道题分 4 个模块（正餐 · 济州海味 · 咖啡&下午茶 · 甜品&体验），
+                15 道题分 4 个模块（正餐 · 济州海味 · 咖啡&下午茶 · 甜品&体验），
                 每题可以选 A、选 B、<span className="text-[#e8714a] font-semibold">我都要</span>、
                 或 <span className="text-muted font-semibold">都不要</span>。
                 投完自动统计，得票最多的餐厅生成最终行程推荐。
@@ -114,7 +114,7 @@ export function Landing({ onStart, onViewResults }: LandingProps) {
                 { label: '日期', value: '4月4日 — 4月7日' },
                 { label: '人数', value: '6 人同行' },
                 { label: '基地', value: '济州市区' },
-                { label: '题目', value: '14 道 · 四选一' },
+                { label: '题目', value: '15 道 · 四选一' },
               ].map((item) => (
                 <div key={item.label} className="p-3 bg-bg rounded-xl border border-line">
                   <div className="text-[11px] font-bold tracking-wider uppercase text-brand mb-0.5">

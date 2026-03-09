@@ -29,4 +29,7 @@ export const IMAGES: Record<string, string[]> = {
   gamgyulfarm: ['/images/gamgyulfarm-0.jpg', '/images/gamgyulfarm-1.jpg', '/images/gamgyulfarm-2.jpg'],
   ollemarket: ['/images/ollemarket-0.jpg', '/images/ollemarket-1.jpg', '/images/ollemarket-2.jpg'],
   udoicecream: ['/images/udoicecream-0.jpg', '/images/udoicecream-1.jpg', '/images/udoicecream-2.jpg'],
+  // ===== Phase 3 新增餐厅 =====
+  loungej: ['/images/loungej-0.jpg', '/images/loungej-1.jpg'],
+  bhc: ['/images/bhc-0.png', '/images/bhc-1.jpg'],
 };
