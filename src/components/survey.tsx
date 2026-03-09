@@ -6,8 +6,8 @@ import { Card } from '@/components/card';
 import { CompactCard } from '@/components/compact-card';
 import { DetailSheet } from '@/components/detail-sheet';
 import { submitVote } from '@/lib/supabase';
-import { ArrowLeft, RotateCcw, Home } from 'lucide-react';
-import type { QuestionOption } from '@/data/questions';
+import { ArrowLeft, RotateCcw, Home, Heart, X } from 'lucide-react';
+import type { QuestionOption, SelectionState } from '@/data/questions';
 
 interface SurveyProps {
   voter: string;
@@ -30,10 +30,18 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
   const categoryQuestions = QUESTIONS.filter(qq => qq.category === q.category);
   const categoryIndex = categoryQuestions.indexOf(q);
 
-  // 选择选项
-  const selectOption = useCallback((optionId: string) => {
-    const isNewSelection = votes[q.id] !== optionId;
-    setVotes((prev) => ({ ...prev, [q.id]: optionId }));
+  // 计算卡片选中态
+  const getSelectionState = useCallback((optId: string): SelectionState => {
+    if (selectedId === optId) return 'selected';
+    if (selectedId === 'both') return 'both';
+    if (selectedId === 'neither') return 'dimmed';
+    return 'none';
+  }, [selectedId]);
+
+  // 选择答案（支持 optId / "both" / "neither"）
+  const selectAnswer = useCallback((value: string) => {
+    const isNewSelection = votes[q.id] !== value;
+    setVotes((prev) => ({ ...prev, [q.id]: value }));
     if (isNewSelection) {
       justSelectedRef.current = true;
     }
@@ -58,7 +66,6 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
     const unfilled = QUESTIONS.filter(qq => !votes[qq.id]);
     if (unfilled.length > 0) {
       alert(`还有 ${unfilled.length} 题未完成。`);
-      // 跳到第一个未答题
       const idx = QUESTIONS.indexOf(unfilled[0]);
       setCurrentQ(idx);
       return;
@@ -141,7 +148,7 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
           </div>
 
           {/* 第二行：分段进度条 */}
-          <div className="flex gap-1 mt-2.5">
+          <div className="flex gap-0.5 mt-2.5">
             {QUESTIONS.map((qq, i) => (
               <div
                 key={qq.id}
@@ -173,8 +180,8 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
             <CompactCard
               key={opt.id}
               option={opt}
-              selected={selectedId === opt.id}
-              onSelect={() => selectOption(opt.id)}
+              selectionState={getSelectionState(opt.id)}
+              onSelect={() => selectAnswer(opt.id)}
               onExpand={() => setExpandedOption(opt)}
             />
           ))}
@@ -186,10 +193,32 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
             <Card
               key={opt.id}
               option={opt}
-              selected={selectedId === opt.id}
-              onSelect={() => selectOption(opt.id)}
+              selectionState={getSelectionState(opt.id)}
+              onSelect={() => selectAnswer(opt.id)}
             />
           ))}
+        </div>
+
+        {/* "我都要" / "都不要" 按钮 */}
+        <div className="flex justify-center gap-3 mt-4">
+          <button
+            onClick={() => selectAnswer('both')}
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all
+              ${selectedId === 'both'
+                ? 'bg-gradient-to-br from-[#e8714a]/20 to-[#c94a1e]/10 border-2 border-[#e8714a]/50 text-brand shadow-sm'
+                : 'bg-white border-[1.5px] border-line text-muted hover:border-[#e8714a]/30 hover:text-brand'}`}
+          >
+            <Heart className="w-3.5 h-3.5" /> 我都要
+          </button>
+          <button
+            onClick={() => selectAnswer('neither')}
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all
+              ${selectedId === 'neither'
+                ? 'bg-[#f0ebe8] border-2 border-[#c8b0a0] text-[#8a7060] shadow-sm'
+                : 'bg-white border-[1.5px] border-line text-muted hover:border-[#c8b0a0] hover:text-[#8a7060]'}`}
+          >
+            <X className="w-3.5 h-3.5" /> 都不要
+          </button>
         </div>
 
         {/* 底部导航按钮 */}
@@ -197,11 +226,8 @@ export function Survey({ voter, onComplete, onBack }: SurveyProps) {
           <button
             onClick={goNext}
             disabled={submitting || !selectedId}
-            className={`px-8 py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed
-              ${currentQ === QUESTIONS.length - 1
-                ? 'text-white bg-gradient-to-br from-brand to-brand2 shadow-[0_6px_18px_rgba(201,74,30,.28)] hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(201,74,30,.36)] active:translate-y-0'
-                : 'text-white bg-gradient-to-br from-brand to-brand2 shadow-[0_6px_18px_rgba(201,74,30,.28)] hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(201,74,30,.36)] active:translate-y-0'
-              }`}
+            className="px-8 py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed
+              text-white bg-gradient-to-br from-brand to-brand2 shadow-[0_6px_18px_rgba(201,74,30,.28)] hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(201,74,30,.36)] active:translate-y-0"
           >
             {submitting ? '提交中...' : currentQ === QUESTIONS.length - 1 ? '提交投票 ✓' : '下一题 →'}
           </button>

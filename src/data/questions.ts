@@ -1,4 +1,6 @@
-export type CategoryId = 'main-meal' | 'cafe-tea';
+export type CategoryId = 'main-meal' | 'cafe-tea' | 'jeju-seafood' | 'dessert-exp';
+
+export type SelectionState = 'selected' | 'both' | 'dimmed' | 'none';
 
 export interface QuestionCategory {
   id: CategoryId;
@@ -27,7 +29,9 @@ export interface Question {
 
 export const CATEGORIES: QuestionCategory[] = [
   { id: 'main-meal', label: '正餐', emoji: '🍖' },
+  { id: 'jeju-seafood', label: '济州海味', emoji: '🐚' },
   { id: 'cafe-tea', label: '咖啡&下午茶', emoji: '☕' },
+  { id: 'dessert-exp', label: '甜品&体验', emoji: '🍊' },
 ];
 
 export function getQuestionsByCategory(categoryId: CategoryId): Question[] {
@@ -133,6 +137,107 @@ export const QUESTIONS: Question[] = [
         tags: ['更可爱', '小屋感', '柑橘饮料'],
         desc: '如果团队偏爱更轻巧、更"海边小房子"的气质，这张票常常比 Delmoondo 更讨喜。',
         address: '25 Aewol-ro 1-gil, Aewol-eup, Jeju-si', apple: 'https://maps.apple.com/?q=Bomnal+Cafe+Jeju+Aewol' }
+    ]
+  },
+  // ===== 🐚 济州海味 =====
+  {
+    id: 'q8', category: 'jeju-seafood',
+    title: '济州早餐：鲍鱼粥 vs 玉鲷烤鱼？',
+    options: [
+      { id: 'myeongjin', name: 'Myeongjin Jeonbok', zh: '鲍鱼粥专门店', price: '₩13,000–30,000 / 人', area: '旧左邑 · 东线',
+        tags: ['鲍鱼早餐', '海边绝景', '东线必吃'],
+        desc: '济州岛东部最有名的鲍鱼料理专门店。鲍鱼粥浓郁鲜甜，石锅饭拌入鲍鱼内脏香气独特，窗外就是大海。排队也值得的晨间朝圣地。',
+        address: '제주시 구좌읍 해맞이해안로 1282', apple: 'https://maps.apple.com/?q=Myeongjin+Jeonbok+Jeju' },
+      { id: 'okdomyeok', name: 'Okdom Station', zh: '玉鲷烤鱼定食', price: '₩15,000–25,000 / 人', area: '南元 · 南线',
+        tags: ['济州灵魂鱼', '玉鲷定食', '淡雅清鲜'],
+        desc: '济州唯一的玉鲷专门餐厅。玉鲷被称为"鲷鱼女王"，曾是朝鲜时代贡品，烤出来清香四溢、肉质细嫩，是最具济州特色的传统味道。',
+        address: '제주 서귀포시 남원읍 태위로 522', apple: 'https://maps.apple.com/?q=Okdom+Station+Jeju' }
+    ]
+  },
+  {
+    id: 'q9', category: 'jeju-seafood',
+    title: '带鱼锅对决：辣炖大锅 vs 匠人拌饭？',
+    options: [
+      { id: 'gwanghae', name: 'Jejugwanghae', zh: '辣炖白带鱼锅', price: '₩20,000–30,000 / 人', area: '涯月 · 西线',
+        tags: ['现捞带鱼', '甜辣锅', '超级下饭'],
+        desc: '使用当日现捞白带鱼，先煎再炖，甜辣汤底吸满年糕和蔬菜。带鱼肉质鲜嫩厚实，还有各种生腌海鲜可以加点，是带鱼料理的高分代表。',
+        address: '제주시 애월읍 애월로 33', apple: 'https://maps.apple.com/?q=Jejugwanghae+Aewol+Jeju' },
+      { id: 'galchijang', name: 'Galchi Jangin', zh: '带鱼料理匠人', price: '₩15,000–25,000 / 人', area: '新济州',
+        tags: ['日韩风格', '带鱼拌饭', '氛围感'],
+        desc: '日韩结合装修风格，氛围感拉满。带鱼拌饭是隐藏招牌，有会中文的店员，位于免税店附近，适合购物后就近解决一餐的好选择。',
+        address: '제주시 연동 신라면세점 부근', apple: 'https://maps.apple.com/?q=Galchi+Jangin+Jeju' }
+    ]
+  },
+  {
+    id: 'q10', category: 'jeju-seafood',
+    title: '济州汤品：厚重猪骨汤 vs 传统荞麦汤？',
+    options: [
+      { id: 'woojin', name: 'Woojin Haejangguk', zh: '猪骨解酒汤', price: '₩8,000–12,000 / 人', area: '济州市',
+        tags: ['解酒神器', '猪骨浓汤', '本地人最爱'],
+        desc: '济州本地人最爱的解酒汤名店，猪骨汤底浓郁醇厚，配上泡菜和米饭就是完美的清晨续命套餐。价格亲民，24小时营业，喝完酒第二天来最合适。',
+        address: '제주시 서사로 11', apple: 'https://maps.apple.com/?q=Woojin+Haejangguk+Jeju' },
+      { id: 'sunine', name: "Suni's Momguk", zh: '济州몸국 · 荞麦猪肉汤', price: '₩9,000–12,000 / 人', area: '旧济州',
+        tags: ['济州限定', '荞麦汤底', '乡土味道'],
+        desc: '몸국是济州独有的乡土料理，用荞麦粉和猪肉熬制。口感朴素温润，是济州人婚丧嫁娶必备的"灵魂汤"，在别的地方吃不到的济州限定体验。',
+        address: '제주시 삼도2동 1168-1', apple: 'https://maps.apple.com/?q=Momguk+Jeju' }
+    ]
+  },
+  {
+    id: 'q11', category: 'jeju-seafood',
+    title: '酱蟹 vs 海鲜锅：精致生腌 vs 豪放大锅？',
+    options: [
+      { id: 'babdoduk', name: 'Ige Babdoduk', zh: '酱油蟹专门店', price: '₩15,000–25,000 / 人', area: '新济州',
+        tags: ['米饭小偷', '果冻口感', '生腌控必选'],
+        desc: '济州人气酱蟹店，螃蟹口感如果冻般滑嫩，蟹黄拌入海苔碎和米饭是"米饭小偷"级别的美味。还可以加点生腌虾和黑猪肉烤着吃。',
+        address: '제주시 삼무로7길 23', apple: 'https://maps.apple.com/?q=Ige+Babdoduk+Jeju' },
+      { id: 'samsunghyeol', name: 'Samsunghyeol Haemul', zh: '三姓穴海鲜锅', price: '₩55,000 / 2–3人', area: '莲洞',
+        tags: ['活海鲜', '团队首选', '排队名店'],
+        desc: '济州最有名的海鲜锅店之一，满满一大锅活海鲜——鲍鱼、扇贝、螃蟹、章鱼端上来还在动。6人团的豪放型选择，吃完加泡面更绝。',
+        address: '제주시 삼성로 67', apple: 'https://maps.apple.com/?q=Samsunghyeol+Haemultang+Jeju' }
+    ]
+  },
+  // ===== 🍖 正餐（追加） =====
+  {
+    id: 'q13', category: 'main-meal',
+    title: '深夜食堂：鲍鱼参鸡汤 vs 黑猪肉猪蹄？',
+    options: [
+      { id: 'jiwon', name: 'Jiwon Samgyetang', zh: '鲍鱼参鸡汤', price: '₩11,000–15,000 / 人', area: '莲洞',
+        tags: ['老夫妻店', '鲍鱼加持', '暖胃补身'],
+        desc: '由一对老夫妻经营的参鸡汤小店，只做两种汤：普通参鸡汤和鲍鱼参鸡汤。用济州鲍鱼升级经典参鸡汤，暖胃又滋补，是深夜最好的收尾。',
+        address: '제주시 연동 261-60', apple: 'https://maps.apple.com/?q=Jiwon+Samgyetang+Jeju' },
+      { id: 'barojokbal', name: 'Baro Jokbal', zh: '黑猪肉猪蹄', price: '₩21,000–35,000 / 人', area: '济州市区',
+        tags: ['Q弹胶原', '生菜包肉', '配啤酒绝了'],
+        desc: '用济州黑猪肉做的猪蹄，比普通猪蹄更紧实Q弹。干卤后配上生菜和蒜片包着吃，再来一杯啤酒，是旅行夜晚最幸福的犒劳方式。',
+        address: '제주시 관덕로 59', apple: 'https://maps.apple.com/?q=Baro+Jokbal+Jeju' }
+    ]
+  },
+  // ===== 🍊 甜品&体验 =====
+  {
+    id: 'q12', category: 'dessert-exp',
+    title: '柑橘甜品：汉拿峰面包 vs 采橘体验？',
+    options: [
+      { id: 'hallabong', name: 'Aewol Bbang Factory', zh: '汉拿峰慕斯面包', price: '₩5,000–9,000 / 人', area: '涯月',
+        tags: ['汉拿峰慕斯', '面包控', '涯月打卡'],
+        desc: '涯月人气面包工厂，用济州特产汉拿峰制作的慕斯是招牌。还有玄武岩米面包和涯月三明治等独家甜品，是西线咖啡厅巡礼的必经之站。',
+        address: '제주시 애월읍 금성5길 42-15', apple: 'https://maps.apple.com/?q=Aewol+Bbang+Factory+Jeju' },
+      { id: 'gamgyulfarm', name: 'Jeju Tangerine Farm', zh: '柑橘采摘体验', price: '₩10,000–15,000 / 人', area: '西归浦',
+        tags: ['亲手采摘', '柑橘园', '体验型'],
+        desc: '不只是吃甜品，而是走进柑橘园亲手采摘济州蜜橘。摘下来直接吃的新鲜度无可替代，还可以带走1-2公斤。适合想要"动手体验"的团队。',
+        address: '서귀포시 남원읍 감귤체험로', apple: 'https://maps.apple.com/?q=Jeju+Tangerine+Farm' }
+    ]
+  },
+  {
+    id: 'q14', category: 'dessert-exp',
+    title: '旅途收尾：市场巡游 vs 牛岛冰淇淋？',
+    options: [
+      { id: 'ollemarket', name: 'Seogwipo Olle Market', zh: '西归浦每日市场', price: '₩5,000–15,000 / 人', area: '西归浦',
+        tags: ['传统市场', '自由逛吃', '一站体验'],
+        desc: '西归浦最大的传统市场，200多个摊位集合了黑猪肉串、海鲜煎饼、柑橘甜品、花生饺子等济州风味。6人团自由分流、各取所需，是旅途收尾的完美句号。',
+        address: '서귀포시 중앙로62번길 18', apple: 'https://maps.apple.com/?q=Seogwipo+Maeil+Olle+Market' },
+      { id: 'udoicecream', name: 'Udo Peanut Ice Cream', zh: '牛岛花生冰淇淋', price: '₩4,000–5,000 / 人', area: '牛岛',
+        tags: ['牛岛限定', '花生香浓', '半日游'],
+        desc: '牛岛是济州东侧的离岛，坐渡轮15分钟到达。用牛岛本地花生做的冰淇淋香浓醇厚，是岛上的标志性甜品。顺便还能看牛岛绝美海景，一举两得。',
+        address: '우도 (성산항에서 페리)', apple: 'https://maps.apple.com/?q=Udo+Island+Jeju' }
     ]
   },
 ];

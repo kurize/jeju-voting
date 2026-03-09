@@ -2,16 +2,17 @@
 
 import { useState, useCallback } from 'react';
 import { IMAGES } from '@/data/images';
-import type { QuestionOption } from '@/data/questions';
+import type { QuestionOption, SelectionState } from '@/data/questions';
 import { MapPin, ChevronLeft, ChevronRight, Check } from 'lucide-react';
 
 interface CardProps {
   option: QuestionOption;
-  selected: boolean;
+  selectionState: SelectionState;
   onSelect: () => void;
 }
 
-export function Card({ option, selected, onSelect }: CardProps) {
+export function Card({ option, selectionState, onSelect }: CardProps) {
+  const selected = selectionState === 'selected';
   const images = IMAGES[option.id] || [];
   const [slideIndex, setSlideIndex] = useState(0);
 
@@ -35,7 +36,10 @@ export function Card({ option, selected, onSelect }: CardProps) {
       onClick={onSelect}
       className={`border-2 rounded-[18px] overflow-hidden bg-card shadow-[0_8px_32px_rgba(60,30,10,.09)] cursor-pointer transition-all duration-200
         hover:shadow-[0_16px_48px_rgba(60,30,10,.16)] hover:translate-y-[-2px] hover:border-[#d4b8a8]
-        ${selected ? 'border-brand shadow-[0_0_0_3px_rgba(201,74,30,.14),0_16px_48px_rgba(60,30,10,.16)]' : 'border-line'}`}
+        ${selectionState === 'selected' ? 'border-brand shadow-[0_0_0_3px_rgba(201,74,30,.14),0_16px_48px_rgba(60,30,10,.16)]'
+          : selectionState === 'both' ? 'border-[#e8714a]/40 shadow-[0_0_0_3px_rgba(232,113,74,.08)]'
+          : selectionState === 'dimmed' ? 'border-line opacity-50 grayscale-[30%]'
+          : 'border-line'}`}
     >
       {/* 图片轮播 */}
       <div className="relative aspect-[16/10] overflow-hidden bg-[#ede3db] group">
@@ -84,9 +88,16 @@ export function Card({ option, selected, onSelect }: CardProps) {
         </div>
 
         {/* 选中标记 */}
-        <div className={`absolute top-3 right-3 w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center z-[2] transition-all ${selected ? 'opacity-100 scale-100' : 'opacity-0 scale-60'}`}>
-          <Check className="w-3.5 h-3.5" />
-        </div>
+        {selectionState === 'selected' && (
+          <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center z-[2] transition-all opacity-100 scale-100">
+            <Check className="w-3.5 h-3.5" />
+          </div>
+        )}
+        {selectionState === 'both' && (
+          <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-[#e8714a]/80 text-white flex items-center justify-center z-[2] text-sm">
+            ❤️
+          </div>
+        )}
       </div>
 
       {/* 卡片内容 */}
@@ -119,11 +130,11 @@ export function Card({ option, selected, onSelect }: CardProps) {
           <button
             onClick={(e) => { e.stopPropagation(); onSelect(); }}
             className={`flex-1 py-2.5 px-3.5 rounded-[10px] text-[13px] font-semibold transition-all
-              ${selected
+              ${selected || selectionState === 'both'
                 ? 'bg-gradient-to-br from-brand to-brand2 text-white border-transparent'
                 : 'bg-bg border-[1.5px] border-line text-text hover:border-brand2 hover:text-brand'}`}
           >
-            {selected ? '✓ 已选择' : '投这一票'}
+            {selected ? '✓ 已选择' : selectionState === 'both' ? '❤️ 都要' : '投这一票'}
           </button>
           <a
             href={option.apple}
