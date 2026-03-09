@@ -3,9 +3,8 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { QUESTIONS, CATEGORIES } from '@/data/questions';
 import { IMAGES } from '@/data/images';
-import { getVotes, clearAllVotes, type VoteRecord } from '@/lib/supabase';
-import { Modal } from '@/components/modal';
-import { ArrowLeft, Download, Trash2, RefreshCw, MapPin } from 'lucide-react';
+import { getVotes, type VoteRecord } from '@/lib/supabase';
+import { ArrowLeft, Download, RefreshCw, MapPin } from 'lucide-react';
 
 interface ResultsProps {
   onBack: () => void;
@@ -34,8 +33,6 @@ interface RestaurantRank {
 export function Results({ onBack, onVoteAgain }: ResultsProps) {
   const [votes, setVotes] = useState<VoteRecord[]>([]);
   const [loading, setLoading] = useState(true);
-  const [modal, setModal] = useState<{ title: string; message?: string; onConfirm: () => void; onCancel?: () => void } | null>(null);
-
   const loadVotes = useCallback(async () => {
     setLoading(true);
     const data = await getVotes();
@@ -105,24 +102,6 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
     return { mostContested, mostDecisive };
   }, [tally, votes.length]);
 
-  const handleClearAll = useCallback(() => {
-    setModal({
-      title: '确定清空全部投票记录？',
-      message: '此操作不可撤销。',
-      onConfirm: async () => {
-        setModal(null);
-        try {
-          await clearAllVotes();
-          await loadVotes();
-        } catch (err) {
-          console.error(err);
-          setModal({ title: '清空失败', message: '请重试。', onConfirm: () => setModal(null) });
-        }
-      },
-      onCancel: () => setModal(null),
-    });
-  }, [loadVotes]);
-
   const handleDownloadText = useCallback(() => {
     const lines: string[] = [];
     CATEGORIES.forEach(cat => {
@@ -175,9 +154,6 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
           </button>
           <button onClick={handleDownloadText} className="py-2 px-3.5 rounded-xl text-xs font-semibold bg-white border border-line text-muted hover:border-[#c8b0a0] hover:text-text transition-colors flex items-center gap-1.5">
             <Download className="w-3 h-3" /> 导出
-          </button>
-          <button onClick={handleClearAll} className="py-2 px-3.5 rounded-xl text-xs font-semibold bg-white border border-[#f0c0b0] text-[#b84030] hover:bg-[#fff5f3] transition-colors flex items-center gap-1.5">
-            <Trash2 className="w-3 h-3" /> 清空
           </button>
         </div>
       </div>
@@ -256,16 +232,6 @@ export function Results({ onBack, onVoteAgain }: ResultsProps) {
         </button>
       </div>
 
-      {/* 自定义弹窗 */}
-      {modal && (
-        <Modal
-          open
-          title={modal.title}
-          message={modal.message}
-          onConfirm={modal.onConfirm}
-          onCancel={modal.onCancel}
-        />
-      )}
     </section>
   );
 }
